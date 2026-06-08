@@ -1,0 +1,105 @@
+aparelho,potencia_w,kwh
+Aparelho de som,200,0.200
+Aparelho de DVD,50,0.050
+Aquecedor de água (até 80L),1500,1.500
+Aquecedor de água (100 a 150L),2500,2.500
+Aquecedor de água (200 a 400L),4000,4.000
+Aquecedor de água por tampa,6000,6.000
+Aquecedor de ambiente,1000,1.000
+Aquecedor central de água,5000,5.000
+Ar-condicionado 8500 BTU,1300,1.300
+Ar-condicionado 10000 BTU,1400,1.400
+Ar-condicionado 12000 BTU,1600,1.600
+Ar-condicionado 14000 BTU,1900,1.900
+Ar-condicionado 18000 BTU,2600,2.600
+Ar-condicionado 21000 BTU,2800,2.800
+Ar-condicionado 30000 BTU,3600,3.600
+Aspirador de pó residencial,600,0.600
+Assadeira grande,1000,1.000
+Assadeira pequena,500,0.500
+Balcão frigorífico,900,0.900
+Banheira de hidromassagem,6600,6.600
+Barbeador,10,0.010
+Batedeira,450,0.450
+Boiler 40 litros,900,0.900
+Boiler 80 litros,1200,1.200
+Bomba d'água 1/4 CV monofásica,390,0.390
+Bomba d'água 1/3 CV monofásica,520,0.520
+Bomba d'água 1/2 CV trifásica,570,0.570
+Bomba d'água 3/4 CV trifásica,820,0.820
+Bomba d'água 1 CV monofásica,1100,1.100
+Cafeteira doméstica,600,0.600
+Cafeteira comercial,1200,1.200
+Carregador de celular,2,0.002
+Chuveiro elétrico 127V,4400,4.400
+Chuveiro elétrico 220V,6000,6.000
+Chuveiro 4 estações,6500,6.500
+Computador,350,0.350
+Condicionador de ar (genérico),1600,1.600
+Conjunto de som,100,0.100
+Ebulidor,1000,1.000
+Enceradeira residencial,300,0.300
+Espremedor de frutas,200,0.200
+Exaustor,150,0.150
+Ferro elétrico automático,1000,1.000
+Ferro elétrico simples,500,0.500
+Ferro elétrico regulável,1500,1.500
+Fogão comum com acendedor,90,0.090
+Fogão elétrico 4 bocas (por queimador),1500,1.500
+Fogão elétrico 6 bocas queimador médio,2100,2.100
+Fogão elétrico 6 bocas queimador grande,2700,2.700
+Forno de microondas,1300,1.300
+Forno elétrico de embutir,4500,4.500
+Freezer vertical pequeno,300,0.300
+Freezer horizontal médio,400,0.400
+Freezer horizontal grande,500,0.500
+Freezer acima de 200 litros,150,0.150
+Freezer até 200 litros,120,0.120
+Freezer balcão,140,0.140
+Fritadeira,1200,1.200
+Geladeira comum,250,0.250
+Geladeira duplex,300,0.300
+Grill,1200,1.200
+Impressora jato de tinta,50,0.050
+Impressora laser,400,0.400
+Lâmpada incandescente 15W,15,0.015
+Lâmpada incandescente 25W,25,0.025
+Lâmpada incandescente 40W,40,0.040
+Lâmpada incandescente 60W,60,0.060
+Lâmpada incandescente 100W,100,0.100
+Lâmpada incandescente 150W,150,0.150
+Lâmpada incandescente 200W,200,0.200
+Lâmpada incandescente 250W,250,0.250
+Lâmpada fluorescente 9W,9,0.009
+Lâmpada fluorescente 20W,20,0.020
+Lâmpada fluorescente 40W,40,0.040
+Liquidificador,400,0.400
+Máquina de lavar louça,2700,2.700
+Máquina de lavar roupas,1500,1.500
+Máquina de lavar roupas com aquecimento,1000,1.000
+Máquina de secar roupas,3500,3.500
+Máquina para costurar,100,0.100
+Motor 3 CV,2200,2.200
+Motor 4 CV,2960,2.960
+Motor 5 CV,3700,3.700
+Motor 7.5 CV,5550,5.550
+Micro computador,250,0.250
+Micro forno elétrico,1000,1.000
+Panela elétrica,1200,1.200
+Sanduicheira,750,0.750
+Sauna residencial,4500,4.500
+Sauna comercial,12000,12.000
+Scanner,50,0.050
+Secador de cabelo pequeno,700,0.700
+Secador de cabelo grande,1400,1.400
+Secadora de roupa residencial,1100,1.100
+Secadora de roupa comercial,5000,5.000
+Telefone sem fio,100,0.100
+Televisor colorido,200,0.200
+Torneira elétrica,2000,2.000
+Torradeira,800,0.800
+Vaporizador,300,0.300
+Ventilador pequeno,70,0.070
+Ventilador médio,200,0.200
+Ventilador grande,250,0.250
+Videogame,15,0.015
