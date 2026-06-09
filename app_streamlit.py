@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 
-st.set_page_config(page_title="Calculadora de Gasto Energético", page_icon="⚡", layout="wide")
+st.set_page_config(page_title="Calculadora de Energia", page_icon="⚡", layout="wide")
 
 st.markdown("""
 <style>
@@ -75,20 +75,15 @@ def _init():
 
 _init()
 
-# ── Cabeçalho ────────────────────────────────────────────────────────────────
 st.image("img/percursor-analysis.png", width=400)
 st.title("Calculadora de Gasto Energético")
 st.caption("Preencha os aparelhos da sua residência e clique em **Gerar Cálculo** para ver os resultados. Os cálculos de tarifas são baseados na tabela oficial da **Energisa Paraíba** (Res. ANEEL nº 3.518/2025) e aplicam-se a consumidores residenciais da Paraíba.")
 st.divider()
 
-# ════════════════════════════════════════════════════════════════════════════
-# SEÇÃO 1 – APARELHOS PRÉ-CONFIGURADOS
-# ════════════════════════════════════════════════════════════════════════════
 st.markdown("### Aparelhos Pré-configurados")
 st.caption("Use a pesquisa para encontrar um aparelho. A potência é preenchida automaticamente.")
 
 with st.form("form_pre"):
-    # Pesquisa com filtro
     preset = st.selectbox("Nome do aparelho", PRESETS, filter_mode="contains", )
 
     c1, c2, c3 = st.columns([2, 1, 1])
@@ -110,7 +105,7 @@ with st.form("form_pre"):
         st.session_state.dashboard = None
         st.success(f"{preset} adicionado.")
 
-# Lista pré-configurados com edição inline
+
 if st.session_state.pre_lista:
     st.markdown("**Itens adicionados:**")
     for i, item in enumerate(st.session_state.pre_lista):
@@ -123,11 +118,11 @@ if st.session_state.pre_lista:
                 unsafe_allow_html=True,
             )
         with col_edit:
-            if st.button("✏️", key=f"ep_{i}", help="Editar"):
+            if st.button("Editar", key=f"ep_{i}", help="Editar"):
                 st.session_state.edit_pre_idx = i
                 st.rerun()
         with col_del:
-            if st.button("🗑️", key=f"dp_{i}", help="Remover"):
+            if st.button("Remover", key=f"dp_{i}", help="Remover"):
                 st.session_state.pre_lista.pop(i)
                 st.session_state.dashboard = None
                 if st.session_state.edit_pre_idx == i:
@@ -180,9 +175,6 @@ if st.session_state.pre_lista:
 
 st.divider()
 
-# ════════════════════════════════════════════════════════════════════════════
-# SEÇÃO 2 – APARELHOS PERSONALIZADOS
-# ════════════════════════════════════════════════════════════════════════════
 st.markdown("### Aparelhos Personalizados")
 st.caption("Cadastre aparelhos que não estão na lista ou com valores específicos do seu modelo.")
 
@@ -215,7 +207,6 @@ with st.form("form_custom"):
             st.session_state.dashboard = None
             st.success(f"{nome_c.strip()} adicionado.")
 
-# Lista personalizados com edição inline
 if st.session_state.cust_lista:
     st.markdown("**Itens adicionados:**")
     for i, item in enumerate(st.session_state.cust_lista):
@@ -287,9 +278,6 @@ if st.session_state.cust_lista:
 
 st.divider()
 
-# ════════════════════════════════════════════════════════════════════════════
-# BOTÃO GERAR CÁLCULO
-# ════════════════════════════════════════════════════════════════════════════
 total_itens = len(st.session_state.pre_lista) + len(st.session_state.cust_lista)
 
 if total_itens == 0:
@@ -311,9 +299,7 @@ else:
             })
         st.session_state.dashboard = todos
 
-# ════════════════════════════════════════════════════════════════════════════
-# DASHBOARD
-# ════════════════════════════════════════════════════════════════════════════
+
 if st.session_state.dashboard:
     df = pd.DataFrame(st.session_state.dashboard)
 
@@ -336,8 +322,6 @@ if st.session_state.dashboard:
     with cc:
         st.metric("Conta de luz estimada",
                   f"R&#36; {custo_min:.2f} – R&#36; {custo_max:.2f}")
-
-    st.caption("Tarifas Energisa Paraíba (Res. ANEEL nº 3.518 de 28/08/2025) · Residencial s/ benefício: R&#36; 0,67565/kWh · Residencial Baixa Renda (acima de 80 kWh): R&#36; 0,57492/kWh")
 
     st.divider()
     col_link, col_reset = st.columns(2)
