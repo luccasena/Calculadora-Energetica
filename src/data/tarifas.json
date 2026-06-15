@@ -1,0 +1,10 @@
+{
+  "distribuidora": "Energisa Paraíba",
+  "classe": "B1 residencial convencional, sem benefício",
+  "tarifa_base_kwh": 0.67565,
+  "bandeira_referencia": "Verde",
+  "adicional_bandeira_kwh": 0.0,
+  "vigencia_inicio": "2025-08-28",
+  "resolucao": "ANEEL nº 3.518/2025",
+  "fonte": "https://www.energisa.com.br/sites/energisa/files/media/documents/2025-07/Quadro%20de%20Tarifas%20EPB-ATUAL.pdf"
+}
