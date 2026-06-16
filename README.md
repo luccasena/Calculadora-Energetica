@@ -22,6 +22,10 @@ A aplicacao permite adicionar aparelhos, informar quantidade, potencia e horas d
 - Pandas
 - Plotly
 
+## Como utilizar
+
+<a href="https://calculadora-energia-pb.streamlit.app/">Clique aqui para acessar a aplicação.</a>
+
 ## Como executar
 
 1. Crie e ative um ambiente virtual.
